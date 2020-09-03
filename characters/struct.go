@@ -1,37 +1,37 @@
 package characters
 
 type Character struct {
-	name         string
-	health       int
-	mana         int
-	xp           int
-	strength     float64
-	intelligence float64
-	agility      float64
-	defense      float64
-	magicDefense float64
-	critChance   float64
-	critDamage   float64
-	commonSense  float64 // the ability to find other ways to do a task/find a rare item/unlock different dialogues
-	statsBuffs   statsBuffs
-	localization localization
-	inventory    inventory
+	Name         string
+	Health       int
+	Mana         int
+	Xp           int
+	Strength     float64
+	Intelligence float64
+	Agility      float64
+	Defense      float64
+	MagicDefense float64
+	CritChance   float64
+	CritDamage   float64
+	CommonSense  float64 // the ability to find other ways to do a task/find a rare item/unlock different dialogues
+	StatsBuffs   StatsBuffs
+	Localization Localization
+	Inventory    Inventory
 }
 
-type statsBuffs struct {
-	buffPerCent float64
-	buffFixed   float64
-	buffTime    int // in seconds
+type StatsBuffs struct {
+	BuffPerCent float64
+	BuffFixed   float64
+	BuffTime    int // in seconds
 }
 
-type localization struct {
-	x            float64
-	y            float64
-	z            float64
-	hitBoxHeight float64
-	hitboxWidth  float64
+type Localization struct {
+	X            float64
+	Y            float64
+	Z            float64
+	HitBoxHeight float64
+	HitboxWidth  float64
 }
 
-type inventory struct {
-	inventory []items.Items
+type Inventory struct {
+	Inventory []items.Items
 }
