@@ -46,6 +46,7 @@ type Inventory struct {
 	Inventory []items.Items
 }
 
+// CurrentStatus of the character
 type CurrentStatus struct {
 	Health int
 	Mana   int
