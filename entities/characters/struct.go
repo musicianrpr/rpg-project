@@ -1,5 +1,7 @@
 package characters
 
+import "github.com/musicianrpr/rpg-project/tree/master/items"
+
 // Character stores the character stats
 type Character struct {
 	Name          string
