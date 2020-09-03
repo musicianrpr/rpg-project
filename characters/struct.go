@@ -1,6 +1,6 @@
 package characters
 
-type character struct {
+type Character struct {
 	name         string
 	health       int
 	mana         int
